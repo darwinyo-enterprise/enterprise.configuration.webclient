@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/angular/angular-cli/master.svg?label=travis)][travis-badge-url]
+[![Build Status](https://travis-ci.org/darwinyo-enterprise/enterprise.configuration.webclient.svg?branch=master)][travis-badge-url]
 
 # Enterprise.Configuration.Webclient
 
