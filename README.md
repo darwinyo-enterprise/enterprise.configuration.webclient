@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/darwinyo-enterprise/enterprise.configuration.webclient.svg?branch=master)
+[![Build Status](https://travis-ci.org/darwinyo-enterprise/enterprise.configuration.webclient.svg?branch=master)][travis-badge-url]
 
 # Enterprise.Configuration.Webclient
 
