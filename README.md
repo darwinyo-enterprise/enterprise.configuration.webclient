@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/angular/angular-cli/master.svg?label=travis)][travis-badge-url]
+
 # Enterprise.Configuration.Webclient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
