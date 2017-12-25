@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('enterprise.configuration.webclient App', () => {
+xdescribe('enterprise.configuration.webclient App', () => {
   let page: AppPage;
 
   beforeEach(() => {
