@@ -7,10 +7,17 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
+<<<<<<< HEAD
     "test:ci":"ng test --single-run --no-progress --browser=ChromeNoSandbox",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "e2e:ci":"ng e2e --no-progress --config=protractor-ci.conf.js",
+=======
+    "test:ci": "ng test --single-run --no-progress --browser=ChromeNoSandbox",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "e2e:ci": "ng e2e --no-progress --config=protractor-ci.conf.js",
+>>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
@@ -19,18 +26,46 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.1.2",
+<<<<<<< HEAD
     "@angular/common": "^5.1.2",
     "@angular/compiler": "^5.1.2",
     "@angular/core": "^5.1.2",
     "@angular/forms": "^5.1.2",
     "@angular/http": "^5.1.2",
+=======
+    "@angular/cdk": "^5.0.2",
+    "@angular/common": "^5.1.2",
+    "@angular/compiler": "^5.1.2",
+    "@angular/core": "^5.1.2",
+    "@angular/flex-layout": "^2.0.0-beta.12",
+    "@angular/forms": "^5.1.2",
+    "@angular/http": "^5.1.2",
+    "@angular/material": "^5.0.2",
+>>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
     "@angular/platform-browser": "^5.1.2",
     "@angular/platform-browser-dynamic": "^5.1.2",
     "@angular/platform-server": "^5.1.2",
     "@angular/router": "^5.1.2",
     "@angular/service-worker": "^5.1.2",
+<<<<<<< HEAD
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "core-js": "^2.4.1",
+=======
+    "@covalent/core": "^1.0.0-rc.1",
+    "@covalent/dynamic-forms": "^1.0.0-rc.1",
+    "@covalent/highlight": "^1.0.0-rc.1",
+    "@covalent/http": "^1.0.0-rc.1",
+    "@covalent/markdown": "^1.0.0-rc.1",
+    "@ngrx/effects": "^4.1.1",
+    "@ngrx/router-store": "^4.1.1",
+    "@ngrx/store": "^4.1.1",
+    "@ngrx/store-devtools": "^4.1.1",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
+    "core-js": "^2.4.1",
+    "hammerjs": "^2.0.8",
+    "jasmine-marbles": "^0.2.0",
+    "ngrx-store-freeze": "^0.2.0",
+>>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
     "rxjs": "^5.5.2",
     "ts-loader": "^3.2.0",
     "zone.js": "^0.8.14"

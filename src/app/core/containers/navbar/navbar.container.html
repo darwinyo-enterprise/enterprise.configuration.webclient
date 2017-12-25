@@ -1,0 +1,69 @@
+<div fxLayout="row" fxLayoutAlign="end center">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span fxShow.xs="false" routerLink="/home" class="cursor-pointer">Enterprise</span>
+  <div flex></div>
+  <div class="menus-holder" fxLayout="row" fxLayoutAlign="end stretch" *ngIf="(logged$|async)">
+    <div fxLayoutAlign="start stretch">
+      <button mat-icon-button [matMenuTriggerFor]="notificationsMenu">
+        <td-notification-count [notifications]="3">
+          <mat-icon>notifications</mat-icon>
+        </td-notification-count>
+      </button>
+      <mat-menu #notificationsMenu="matMenu" [overlapTrigger]="false">
+        <td-menu>
+          <div td-menu-header class="md-subhead">Notifications</div>
+          <mat-nav-list dense>
+            <app-core-notification 
+              [notification]="notification" 
+              (navigateEvent)="onNavigateEvent($event)"></app-core-notification>
+          </mat-nav-list>
+          <button mat-button color="primary" td-menu-footer>
+            See All Notifications
+          </button>
+        </td-menu>
+      </mat-menu>
+    </div>
+    <div fxLayoutAlign="start stretch" fxShow.xs="false">
+      <button mat-icon-button [matMenuTriggerFor]="messageMenu">
+        <td-notification-count color="primary" [notifications]="false">
+          <mat-icon>messages</mat-icon>
+        </td-notification-count>
+      </button>
+      <mat-menu #messageMenu="matMenu" [overlapTrigger]="false">
+        <td-menu>
+          <mat-nav-list dense>
+            <app-core-message-menu 
+              [menuModel]="messageMenuModel" 
+              (navigateEvent)="onNavigateEvent($event)"></app-core-message-menu>
+          </mat-nav-list>
+        </td-menu>
+      </mat-menu>
+    </div>
+    <div fxLayoutAlign="start stretch" fxShow.xs="false">
+      <button mat-icon-button [matMenuTriggerFor]="userMenu">
+        <td-notification-count [notifications]="false">
+          <mat-icon>person</mat-icon>
+        </td-notification-count>
+      </button>
+      <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+        <td-menu>
+          <mat-nav-list dense>
+            <app-core-user-menu [menuModel]="userMenuModel" (navigateEvent)="onNavigateEvent($event)"></app-core-user-menu>
+          </mat-nav-list>
+        </td-menu>
+      </mat-menu>
+    </div>
+  </div>
+  <div class="menus-holder" fxLayout="row" fxLayoutAlign="end stretch" *ngIf="!(logged$|async)">
+    <div fxLayoutAlign="start stretch" fxShow.xs="false">
+      <button mat-button (click)="onNavigateEvent(registerUrl)">
+        <a>Register</a>
+      </button>
+      <button mat-button (click)="onNavbarLoginBtn_Click()">
+        <a>Login</a>
+      </button>
+    </div>
+  </div>
+</div>
