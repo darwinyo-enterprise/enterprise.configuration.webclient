@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
 import { ConfirmModel } from './shared/models/dialogs/confirm.model';
 import { AlertModel } from './shared/models/dialogs/alert.model';
 import { ReplaySubject } from 'rxjs/Rx';
@@ -9,18 +6,12 @@ import { Store } from '@ngrx/store';
 import { TdDialogService, IAlertConfig, IConfirmConfig } from '@covalent/core';
 import { Component, ViewContainerRef, OnInit, OnDestroy } from '@angular/core';
 import * as fromCore from './core/reducers/core-state.reducer';
->>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-<<<<<<< HEAD
-export class AppComponent {
-  title = 'app';
-  test=1;
-=======
 export class AppComponent implements OnInit, OnDestroy {
   title: string;
   error$: Observable<AlertModel | null>;
@@ -78,5 +69,4 @@ export class AppComponent implements OnInit, OnDestroy {
       viewContainerRef: this._viewContainerRef
     });
   }
->>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
 }

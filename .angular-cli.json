@@ -20,12 +20,8 @@
       "prefix": "app",
       "serviceWorker": true,
       "styles": [
-<<<<<<< HEAD
-        "styles.scss"
-=======
         "styles.scss",
         "../node_modules/@covalent/core/common/platform.scss"
->>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

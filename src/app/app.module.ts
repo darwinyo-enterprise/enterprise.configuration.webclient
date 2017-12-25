@@ -4,9 +4,6 @@ import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
-<<<<<<< HEAD
-import { AppComponent } from './app.component';
-=======
 import { MatSidenavModule } from '@angular/material';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CustomRouterStateSerializer } from './shared/utils';
@@ -24,7 +21,6 @@ import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
->>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
 
 
 @NgModule({
@@ -32,14 +28,6 @@ import { CoreModule } from './core/core.module';
     AppComponent
   ],
   imports: [
-<<<<<<< HEAD
-    // Pre-rendering Setting
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    // Server Workers
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
-  ],
-  providers: [],
-=======
     MatSidenavModule,
     RouterModule,
     CovalentDialogsModule,
@@ -61,7 +49,6 @@ import { CoreModule } from './core/core.module';
     PostApiHelper,
     { provide: RouterStateSerializer, useClass: CustomRouterStateSerializer }
   ],
->>>>>>> Skeleton Builds Layout, Navbar, @ngrx/store, effects, etc
   bootstrap: [AppComponent]
 })
 export class AppModule { }
